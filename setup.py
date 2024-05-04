@@ -16,13 +16,13 @@ setup(
     packages=find_packages(),
     classifiers=[
         'Development Status :: 3 - Alpha',
-        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.11',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
     ],
     python_requires='>=3.11',
     install_requires=[
-        'setuptools~=65.5.0',
+        'setuptools~=65.5.1',
         'pandas~=1.3.0',
         'typing~=3.7.4'
     ],
