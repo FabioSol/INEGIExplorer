@@ -1,8 +1,8 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
     name='inegi_explorer',
-    version='0.1.0',
+    version='0.1.1',
     author='Fabio Sol',
     author_email='fabioso2231@gmail.com',
     description='A Python package for exploring and fetching INEGI data without requiring an API key.',
@@ -13,7 +13,7 @@ setup(
                      'INEGI data for various purposes',
     long_description_content_type='text/markdown',
     url='https://github.com/FabioSol/INEGIExplorer',
-    packages=find_packages(),
+    packages=['inegi_explorer','inegi_explorer/nodes'],
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Programming Language :: Python :: 3.11',
@@ -22,8 +22,8 @@ setup(
     ],
     python_requires='>=3.11',
     install_requires=[
-        'setuptools~=65.5.1',
-        'pandas~=1.3.0',
-        'typing~=3.7.4'
+        'setuptools>=65.5.1',
+        'pandas>=1.3.2',
+        'typing>=3.7.4'
     ],
 )
